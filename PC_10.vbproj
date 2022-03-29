@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3D1364E-7C85-4B69-9C41-5743F92859F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PC_10.My.MyApplication</StartupObject>
+    <RootNamespace>PC_10</RootNamespace>
+    <AssemblyName>PC_10</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PC_10.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PC_10.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_chart_guest.Designer.vb">
+      <DependentUpon>Form_chart_guest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_chart_guest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_check_in.Designer.vb">
+      <DependentUpon>Form_check_in.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_check_in.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_check_out.Designer.vb">
+      <DependentUpon>Form_check_out.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_check_out.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_costumer.Designer.vb">
+      <DependentUpon>Form_costumer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_costumer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_master_room.Designer.vb">
+      <DependentUpon>Form_master_room.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_master_room.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin.Designer.vb">
+      <DependentUpon>Form_admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_employee.Designer.vb">
+      <DependentUpon>Form_employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_master_employee.Designer.vb">
+      <DependentUpon>Form_master_employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_master_employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_master_food.Designer.vb">
+      <DependentUpon>Form_master_food.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_master_food.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_master_item.Designer.vb">
+      <DependentUpon>Form_master_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_master_item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_report.Designer.vb">
+      <DependentUpon>Form_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_report_view.Designer.vb">
+      <DependentUpon>Form_report_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_report_view.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_request_additional.Designer.vb">
+      <DependentUpon>Form_request_additional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_request_additional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_reservation.Designer.vb">
+      <DependentUpon>Form_reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_room_type.Designer.vb">
+      <DependentUpon>Form_room_type.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_room_type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_welcome.Designer.vb">
+      <DependentUpon>Form_welcome.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_login.Designer.vb">
+      <DependentUpon>Form_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_chart_guest.resx">
+      <DependentUpon>Form_chart_guest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_check_in.resx">
+      <DependentUpon>Form_check_in.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_check_out.resx">
+      <DependentUpon>Form_check_out.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_costumer.resx">
+      <DependentUpon>Form_costumer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_master_room.resx">
+      <DependentUpon>Form_master_room.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin.resx">
+      <DependentUpon>Form_admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_employee.resx">
+      <DependentUpon>Form_employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_master_employee.resx">
+      <DependentUpon>Form_master_employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_master_food.resx">
+      <DependentUpon>Form_master_food.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_master_item.resx">
+      <DependentUpon>Form_master_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_report.resx">
+      <DependentUpon>Form_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_report_view.resx">
+      <DependentUpon>Form_report_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_request_additional.resx">
+      <DependentUpon>Form_request_additional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_reservation.resx">
+      <DependentUpon>Form_reservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_room_type.resx">
+      <DependentUpon>Form_room_type.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_welcome.resx">
+      <DependentUpon>Form_welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_login.resx">
+      <DependentUpon>Form_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
